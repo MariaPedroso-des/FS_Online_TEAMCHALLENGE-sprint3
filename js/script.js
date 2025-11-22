@@ -38,7 +38,7 @@ function play (usuarioOpcion) {
     || (usuarioOpcion === papel && ordenadorOpcion === piedra) 
     || (usuarioOpcion === tijera && ordenadorOpcion === papel)) {
     return ganar;
-  } else if (
+  } else (
     (ordenadorOpcion === piedra && usuarioOpcion === tijera ) 
     || (ordenadorOpcion === papel && usuarioOpcion === piedra) 
     || (ordenadorOpcion === tijera && usuarioOpcion === papel)) {
@@ -49,7 +49,7 @@ function play (usuarioOpcion) {
 const resultado = play()
 if (resultado === ganar) {
     puntosUsuario++;
-  } else if ( resultado === perder) {
+  } else ( resultado === perder) {
     puntosOrdenador++;
   } 
 contadorUsuario.innerText = `${puntosUsuario}`
