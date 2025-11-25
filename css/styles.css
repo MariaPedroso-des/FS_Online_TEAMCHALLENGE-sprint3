@@ -1,15 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+:root {
+  /*--background-color:#aeeeb9;
+  --background: radial-gradient(circle, rgba(174, 238, 185, 1) 0%, rgba(72, 36, 181, 1) 100%);*/
+  --font-regular: 400;
+  --font-bold: 900
 }
-.boton-jugada {
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 94px;;
+  font-family: 'Montserrat', sans-serif;
+  align-items:  center;
+  text-align: center;
+  background: radial-gradient(circle, rgba(174, 238, 185, 1) 0%, rgba(72, 36, 181, 1) 100%);
+}
+
+/*boton-jugada {
   background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-}
+}*/
+
 #resultados {
   font-size: 20px;
   margin: 20px 0;
@@ -17,4 +32,27 @@ body {
 
 title {
   font-size: 30px;
+}
+
+#botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+button {
+  background-color: #25282c;
+  color: #ffff;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  max-width: 100%;
+  font-weight: var(--font-bold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: black;
 }
